@@ -5,7 +5,7 @@ export default defineComponent({
 
   setup() {
     return () => (
-      <button>2</button>
+      <button class="text-orange-400">2</button>
     )
   },
 })
