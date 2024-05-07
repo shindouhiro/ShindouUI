@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { VPTeamMembers } from 'vitepress/theme'
 </script>
 
 <template>
   <div class="content">
     <div class="content-container">
-      <main class="main">
+      <!-- <main class="main">
         <div class="vp-doc" flex flex-col items-center mt-10>
           <h2 id="meet-the-team" op70 font-normal p="t-10 b-2">
             Meet The Team
@@ -30,7 +29,7 @@ import { VPTeamMembers } from 'vitepress/theme'
             </div>
           </div>
         </div>
-      </main>
+      </main> -->
     </div>
   </div>
 </template>
