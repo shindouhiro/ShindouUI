@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
+import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
+
 export default defineConfig({
   title: 'ShindouUI',
   description: 'ShindouUI',
@@ -11,21 +13,31 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/' },
-      { text: '组件', link: '/markdown-examples' },
+      { text: '组件', link: '/components/button' },
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
+    sidebar: {
+      '/components/': [
+        {
+          items: [
+            { text: 'Button 按钮', link: '/components/button' },
+            { text: 'Tree 树形组件', link: '/components/tree' },
+          ],
+        },
+      ],
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
+
+  },
+  markdown: {
+    config: (md) => {
+      md.use(demoblockPlugin)
+    },
+  },
+  vite: {
+    plugins: [demoblockVitePlugin()],
   },
 })

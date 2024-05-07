@@ -3,7 +3,8 @@ import { h, watch } from 'vue'
 import Theme from 'vitepress/theme'
 import TwoslashFloatingVue from '@shikijs/vitepress-twoslash/client'
 import UnoCSSLayout from './UnoCSSLayout.vue'
-
+import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
+import { useComponents } from './useComponents'
 import '@shikijs/vitepress-twoslash/style.css'
 
 import './rainbow.css'
@@ -20,6 +21,7 @@ export default {
   },
   enhanceApp({ app, router }) {
     app.use(TwoslashFloatingVue)
+    useComponents(app)
 
     if (typeof window === 'undefined')
       return

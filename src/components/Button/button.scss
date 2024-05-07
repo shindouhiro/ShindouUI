@@ -1,0 +1,40 @@
+@import "../../assets/scss/variables.scss";
+.btn-primary {
+  background-color: $primary-color;
+  &:hover, &:disabled  {
+    background-color: $primary-color-hover;
+  }
+}
+.btn-danger {
+  background-color: $danger-color;
+  &:hover, &:disabled  {
+    background-color: $danger-color-hover;
+  }
+}
+.btn-success {
+  background-color: $success-color;
+  &:hover, &:disabled  {
+    background-color: $success-color-hover; 
+  }
+}
+.btn-info {
+  background-color: $info-color;
+  &:hover, &:disabled  { 
+    background-color: $info-color-hover;
+  }
+}
+.btn-warning {
+  background-color: $warning-color;
+  &:hover, &:disabled  {
+    background-color: $warning-color-hover;
+  }
+
+}
+.btn {
+  @apply 
+    py-2 px-4 text-white;
+  &:disabled {
+    @apply
+    cursor-not-allowed
+  }
+}
