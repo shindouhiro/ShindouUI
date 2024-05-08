@@ -1,0 +1,6 @@
+[build]
+  # 指定构建命令
+  command = "npm run docs:build"
+  
+  # 指定发布目录，即构建输出的目录
+  publish = "./docs/.vitepress/dist/"

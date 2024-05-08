@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue'
+import { computed, defineComponent } from 'vue'
 import type { ButtonProps } from './button-type'
 import { buttonProps } from './button-type'
 import './button.scss'
@@ -9,13 +9,28 @@ export default defineComponent({
   setup(props: ButtonProps, { slots }) {
     return () => {
       const { disabled, round, type, size, plain } = props
-      const styleCss: Record<string, boolean> = {
-        'btn-round': round,
-        'btn-plain': plain,
+
+      const classes = computed(() => {
+        return [
+          {
+            'btn': true,
+            [`btn-${size}`]: size,
+            [`btn-${type}`]: type,
+            'btn-round': round,
+            'btn-plain': plain,
+          },
+        ]
+      })
+
+      const btnAttr = {
+        disabled,
+        class: [classes.value],
       }
-      const renderCss: string[] = Object.keys(styleCss).filter(key => styleCss[key])
+
       return (
-        <button class={`btn btn-${type} btn-${size} ${renderCss}`} disabled={disabled}>
+        <button
+          {...btnAttr}
+        >
           {slots.default ? slots.default() : '按钮'}
         </button>
       )

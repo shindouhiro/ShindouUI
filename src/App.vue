@@ -3,5 +3,7 @@ import Button from './components/Button/button'
 </script>
 
 <template>
-  <Button>Primary</Button>
+  <Button disabled type="primary" plain>
+    Primary
+  </Button>
 </template>
