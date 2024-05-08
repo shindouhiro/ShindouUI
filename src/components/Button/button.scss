@@ -32,9 +32,42 @@
 }
 .btn {
   @apply 
-    py-2 px-4 text-white;
+    py-1 px-4 text-white;
   &:disabled {
     @apply
     cursor-not-allowed
   }
 }
+
+.btn-round {
+  @apply rounded
+}
+
+.btn-plain.btn-primary {
+  color: $primary-color;
+  background-color: $primary-color-plain;
+  border: 1px solid $primary-color;
+}
+.btn-plain.btn-success {
+  color: $success-color;
+  background-color: $success-color-plain;
+  border: 1px solid $success-color;
+}
+
+.btn-plain.btn-info {
+  color: $info-color;
+  background-color: $info-color-plain;
+  border: 1px solid $info-color;
+}
+
+.btn-plain.btn-warning {
+  color: $warning-color; 
+  background-color: $warning-color-plain;
+  border: 1px solid $warning-color; 
+}
+.btn-plain.btn-danger {
+  color: $danger-color;
+  background-color: $danger-color-plain;
+  border: 1px solid $danger-color;
+}
+

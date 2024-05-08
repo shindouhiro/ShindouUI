@@ -1,10 +1,15 @@
 $primary-color: #409eff;
 $primary-color-hover: lighten($primary-color, 10%);
+$primary-color-plain: #a0cfff;
 $success-color: #67c23a;
 $success-color-hover: lighten($success-color, 10%);
+$success-color-plain: #f0f9eb;
 $warning-color: #e6a23c;
 $warning-color-hover: lighten($warning-color, 10%);
+$warning-color-plain: #fffbe6;
 $info-color: #909399;
 $info-color-hover: lighten($info-color, 10%);
+$info-color-plain: #e6e6e6;
 $danger-color: #f56c6c;
 $danger-color-hover: lighten($danger-color, 10%);
+$danger-color-plain: #fef0f0;

@@ -10,21 +10,59 @@
 
 ```vue
 <template>
-  <s-button type="primary" ml-2>
-    Primary
-  </s-button>
-  <s-button type="danger" ml-2>
-    Danger
-  </s-button>
-  <s-button type="success" ml-2>
-    Success
-  </s-button>
-  <s-button type="info" ml-2>
-    Info
-  </s-button>
-  <s-button type="warning" ml-2>
-    Warning
-  </s-button>
+  <div class="mb-4">
+    <s-button type="primary" ml-2>
+      Primary
+    </s-button>
+    <s-button type="danger" ml-2>
+      Danger
+    </s-button>
+    <s-button type="success" ml-2>
+      Success
+    </s-button>
+    <s-button type="info" ml-2>
+      Info
+    </s-button>
+    <s-button type="warning" ml-2>
+      Warning
+    </s-button>
+  </div>
+
+  <div class="mb-4">
+    <s-button type="primary" ml-2 round>
+      Primary
+    </s-button>
+    <s-button type="danger" ml-2 round>
+      Danger
+    </s-button>
+    <s-button type="success" ml-2 round>
+      Success
+    </s-button>
+    <s-button type="info" ml-2 round>
+      Info
+    </s-button>
+    <s-button type="warning" ml-2 round>
+      Warning
+    </s-button>
+  </div>
+
+  <div class="mb-4">
+    <s-button type="primary" ml-2 plain>
+      Primary
+    </s-button>
+    <s-button type="danger" ml-2 plain>
+      Danger
+    </s-button>
+    <s-button type="success" ml-2 plain>
+      Success
+    </s-button>
+    <s-button type="info" ml-2 plain>
+      Info
+    </s-button>
+    <s-button type="warning" ml-2 plain>
+      Warning
+    </s-button>
+  </div>
 </template>
 ```
 

@@ -24,6 +24,10 @@ export const buttonProps = {
     type: Boolean,
     default: false,
   },
+  plain: {
+    type: Boolean,
+    default: false,
+  },
 } as const
 
 export type ButtonProps = ExtractPropTypes<typeof buttonProps>
