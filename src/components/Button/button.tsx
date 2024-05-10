@@ -21,12 +21,10 @@ export default defineComponent({
           },
         ]
       })
-
       const btnAttr = {
         disabled,
         class: [classes.value],
       }
-
       return (
         <button
           {...btnAttr}
