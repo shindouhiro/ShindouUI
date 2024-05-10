@@ -11,7 +11,7 @@ console.log(__dirname)
 const createPackgeJson = async () => {
   const packageStr = `{
     "name": "shindou-ui",
-    "version": "1.1.0",
+    "version": "0.0.5",
     "main": "shindou-ui.umd.cjs",
     "module": "shindou-ui.js",
     "author": "Hikaru",
@@ -26,7 +26,7 @@ const createPackgeJson = async () => {
       "url": ""
     }
   }`
-  await fs.writeFile(path.resolve(outputDir, 'pageage.json'), packageStr, 'utf-8')
+  await fs.writeFile(path.resolve(outputDir, 'package.json'), packageStr, 'utf-8')
 }
 
 const buildLib = async () => {
