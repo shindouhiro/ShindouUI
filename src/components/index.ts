@@ -1,5 +1,5 @@
-import type {App} from 'vue'
-import SButton,{ Button } from './Button'
+import type { App } from 'vue'
+import SButton, { Button } from './Button'
 
 export {
   Button
@@ -8,8 +8,8 @@ export {
 const components = [SButton]
 
 export default {
-   version: '',
-   install(app: App) {
-   components.forEach(component=> app.use(component))
+  version: '1.1.1',
+  install(app: App) {
+    components.forEach(component => app.use(component))
   }
 }

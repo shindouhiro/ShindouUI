@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import Button from './components/Button/button'
+import { Button } from '../dist/shindou-ui.js'
+import '../dist/style.css'
 </script>
 
 <template>
